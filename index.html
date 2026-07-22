@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color"
+          content="#ff8fc4">
+
+    <meta name="description"
+          content="A special birthday website made for Jillian by Nayeonie.">
+
+    <title>Happy Birthday Jillian</title>
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Kaushan+Script&family=Poppins:wght@300;400;500;600;700&family=Story+Script&display=swap"
+          rel="stylesheet">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Background Decorations -->
+
+    <div class="background-decoration"
+         aria-hidden="true">
+
+        <div class="blur-circle blur-circle-one"></div>
+
+        <div class="blur-circle blur-circle-two"></div>
+
+        <div class="blur-circle blur-circle-three"></div>
+
+        <div class="floating-decoration decoration-one">
+            💗
+        </div>
+
+        <div class="floating-decoration decoration-two">
+            ✨
+        </div>
+
+        <div class="floating-decoration decoration-three">
+            🎀
+        </div>
+
+        <div class="floating-decoration decoration-four">
+            💕
+        </div>
+
+        <div class="floating-decoration decoration-five">
+            ✦
+        </div>
+
+        <div class="floating-decoration decoration-six">
+            🌸
+        </div>
+
+    </div>
+
+
+    <!-- Main Website -->
+
+    <main class="page-container">
+
+
+        <!-- Hero Section -->
+
+        <section class="hero-section glass-card">
+
+            <p class="from-text">
+                From Nayeonie
+            </p>
+
+            <div class="profile-wrapper">
+
+                <div class="profile-glow"></div>
+
+                <div class="profile-sparkle profile-sparkle-one">
+                    ✦
+                </div>
+
+                <div class="profile-sparkle profile-sparkle-two">
+                    ✨
+                </div>
+
+                <div class="profile-sparkle profile-sparkle-three">
+                    ♡
+                </div>
+
+                <img src="images/profile.jpg"
+                     alt="Birthday girl Jillian"
+                     class="profile-image">
+
+            </div>
+
+            <div class="birthday-heading">
+
+                <h1>
+                    Happy Birthday
+                </h1>
+
+                <h2 class="birthday-name">
+                    Jillian
+                </h2>
+
+            </div>
+
+            <div class="birthday-date-wrapper">
+
+                <span class="date-decoration">
+                    ✦
+                </span>
+
+                <p class="birthday-date">
+                    July 23, 2007
+                </p>
+
+                <span class="date-decoration">
+                    ✦
+                </span>
+
+            </div>
+
+            <button class="primary-button"
+                    id="letterBtn"
+                    type="button">
+
+                <span class="button-icon">
+                    💌
+                </span>
+
+                <span>
+                    letter ni cutie
+                </span>
+
+            </button>
+
+            <p class="hero-message">
+                grabe naiyak ako habang tinatype to grabe iyak ko talaga as in grabe
+            </p>
+
+        </section>
+
+
+        <!-- Memory Game Section -->
+
+        <section class="memory-section glass-card">
+
+            <div class="section-heading">
+
+                <span class="section-icon">
+                    💖
+                </span>
+
+                <div>
+
+                    <p class="section-label">
+                        tignan natin kung pang trentahin na memory m
+                    </p>
+
+                    <h2>
+                        Memory Game
+                    </h2>
+
+                </div>
+
+            </div>
+
+            <p class="section-description">
+                match mo lang sila, self explanatory naman
+            </p>
+
+            <div class="game-stats">
+
+                <div class="stat-card">
+
+                    <span class="stat-label">
+                        Moves
+                    </span>
+
+                    <strong id="moves">
+                        0
+                    </strong>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <span class="stat-label">
+                        Time
+                    </span>
+
+                    <strong id="timer">
+                        00:00
+                    </strong>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <span class="stat-label">
+                        Pairs
+                    </span>
+
+                    <strong id="pairs">
+                        0 / 8
+                    </strong>
+
+                </div>
+
+            </div>
+
+            <div class="memory-grid"
+                 id="memoryGrid"
+                 aria-label="Memory matching game">
+
+                <!-- Memory cards are created by script.js -->
+
+            </div>
+
+            <button class="secondary-button"
+                    id="resetGameBtn"
+                    type="button">
+
+                <span>
+                    ↻
+                </span>
+
+                Reset Game
+
+            </button>
+
+        </section>
+
+
+        <!-- Modern Music Player -->
+
+        <section class="music-section glass-card">
+
+            <div class="section-heading">
+
+                <span class="section-icon">
+                    🎵
+                </span>
+
+                <div>
+
+                    <p class="section-label">
+                        patugtog k muna
+                    </p>
+
+                    <h2>
+                        Music Player
+                    </h2>
+
+                </div>
+
+            </div>
+
+            <div class="music-player">
+
+                <audio id="bgMusic"
+                       preload="metadata">
+
+                    <source src="music/song1.mp3"
+                            type="audio/mpeg">
+
+                    Your browser does not support audio playback.
+
+                </audio>
+
+
+                <!-- Album Artwork -->
+
+                <div class="album-art-wrapper">
+
+                    <div class="album-glow"></div>
+
+                    <img src="images/song1.jpg"
+                         alt="Album artwork"
+                         class="album-art"
+                         id="albumArt">
+
+                    <div class="playing-indicator"
+                         id="playingIndicator"
+                         aria-hidden="true">
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Song Information -->
+
+                <div class="song-information">
+
+                    <p class="now-playing-label">
+                        Now Playing
+                    </p>
+
+                    <h3 id="songTitle">
+                        Top Of The World
+                    </h3>
+
+                    <p id="songArtist">
+                        Carpenters
+                    </p>
+
+                </div>
+
+
+                <!-- Progress Bar -->
+
+                <div class="progress-area">
+
+                    <input type="range"
+                           id="progressSlider"
+                           class="music-slider progress-slider"
+                           min="0"
+                           max="100"
+                           step="0.1"
+                           value="0"
+                           aria-label="Song progress">
+
+                    <div class="time-display">
+
+                        <span id="currentTime">
+                            0:00
+                        </span>
+
+                        <span id="duration">
+                            0:00
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Main Controls -->
+
+                <div class="music-controls">
+
+                    <button class="music-control-button"
+                            id="previousBtn"
+                            type="button"
+                            aria-label="Previous song">
+
+                        ⏮
+
+                    </button>
+
+                    <button class="music-control-button play-button"
+                            id="playPauseBtn"
+                            type="button"
+                            aria-label="Play music">
+
+                        ▶
+
+                    </button>
+
+                    <button class="music-control-button"
+                            id="nextBtn"
+                            type="button"
+                            aria-label="Next song">
+
+                        ⏭
+
+                    </button>
+
+                </div>
+
+
+                <!-- Volume Control -->
+
+                <div class="volume-control">
+
+                    <button class="volume-button"
+                            id="muteBtn"
+                            type="button"
+                            aria-label="Mute music">
+
+                        🔊
+
+                    </button>
+
+                    <input type="range"
+                           id="volumeSlider"
+                           class="music-slider volume-slider"
+                           min="0"
+                           max="1"
+                           step="0.01"
+                           value="0.5"
+                           aria-label="Music volume">
+
+                </div>
+
+
+                <!-- Playlist -->
+
+                <div class="playlist">
+
+                    <div class="playlist-heading">
+
+                        <h3>
+                            Playlist
+                        </h3>
+
+                        <span id="playlistCount">
+                            4 songs
+                        </span>
+
+                    </div>
+
+                  <button class="playlist-song active"
+        type="button"
+        data-index="0"
+        data-src="music/song1.mp3"
+        data-title="Top of the World"
+        data-artist="Carpenters"
+        data-cover="images/song1.jpg">
+
+    <span class="playlist-number">
+        01
+    </span>
+
+    <span class="playlist-details">
+
+        <strong>
+            Top of the World
+        </strong>
+
+        <small>
+            Carpenters
+        </small>
+
+    </span>
+
+    <span class="playlist-play-icon">
+        ▶
+    </span>
+
+</button>
+
+<button class="playlist-song"
+        type="button"
+        data-index="1"
+        data-src="music/song2.mp3"
+        data-title="So Sick"
+        data-artist="Ne-Yo"
+        data-cover="images/song2.jpg">
+
+    <span class="playlist-number">
+        02
+    </span>
+
+    <span class="playlist-details">
+
+        <strong>
+            So Sick
+        </strong>
+
+        <small>
+            Ne-Yo
+        </small>
+
+    </span>
+
+    <span class="playlist-play-icon">
+        ▶
+    </span>
+
+</button>
+
+<button class="playlist-song"
+        type="button"
+        data-index="2"
+        data-src="music/song3.mp3"
+        data-title="Gitara"
+        data-artist="Parokya ni Edgar"
+        data-cover="images/song3.jpg">
+
+    <span class="playlist-number">
+        03
+    </span>
+
+    <span class="playlist-details">
+
+        <strong>
+            Gitara
+        </strong>
+
+        <small>
+            Parokya ni Edgar
+        </small>
+
+    </span>
+
+    <span class="playlist-play-icon">
+        ▶
+    </span>
+
+</button>
+
+<button class="playlist-song"
+        type="button"
+        data-index="3"
+        data-src="music/song4.mp3"
+        data-title="HADJWHAJSHDJAHDSJDHDA"
+        data-artist="Jillian"
+        data-cover="images/song4.jpg">
+
+    <span class="playlist-number">
+        04
+    </span>
+
+    <span class="playlist-details">
+
+        <strong>
+            HADJWHAJSHDJAHDSJDHDA
+        </strong>
+
+        <small>
+            Jillian
+        </small>
+
+    </span>
+
+    <span class="playlist-play-icon">
+        ▶
+    </span>
+
+</button>
+
+<button class="playlist-song"
+        type="button"
+        data-index="4"
+        data-src="music/song5.mp3"
+        data-title="Happy Birthday"
+        data-artist="KNS Tress"
+        data-cover="images/song5.jpg">
+
+    <span class="playlist-number">
+        05
+    </span>
+
+    <span class="playlist-details">
+
+        <strong>
+            Happy Birthday
+        </strong>
+
+        <small>
+            KNS Tress
+        </small>
+
+    </span>
+
+    <span class="playlist-play-icon">
+        ▶
+    </span>
+
+</button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Footer -->
+
+        <footer class="website-footer">
+
+            <p>
+                Made with
+                <span>♥</span>
+                by Nayeonie
+            </p>
+
+            <small>
+                For Jillian's special day
+            </small>
+
+        </footer>
+
+    </main>
+
+
+    <!-- Birthday Letter Popup -->
+
+    <div class="popup-overlay"
+         id="letterPopup"
+         role="dialog"
+         aria-modal="true"
+         aria-labelledby="letterTitle">
+
+        <div class="letter-popup">
+
+            <button class="popup-close-button"
+                    id="closeLetterBtn"
+                    type="button"
+                    aria-label="Close birthday letter">
+
+                ×
+
+            </button>
+
+            <div class="envelope-decoration"
+                 aria-hidden="true">
+
+                <div class="envelope-heart">
+                    ♥
+                </div>
+
+            </div>
+
+            <div class="letter-content">
+
+                <p class="letter-small-title">
+                    letter na sobrang nakakaiyak
+                </p>
+
+                <h2 id="letterTitle">
+                    Happy Birthday, Jillian!
+                </h2>
+
+                <div class="letter-message">
+
+                    <p>
+                        Dear Kyosei.. ay Jillian pala
+                    </p>
+
+                    <p>
+                       HAPPY HAPPY HBD BIRTHDAY,
+                        sana bff mo pa rin aq hanggang 97th birthday kaso patay na ata aq non
+                    </p>
+
+                    <p>
+                        Thank u kasi bff tayo kahit na napaka bully mong trentahin ka.
+                        sana wag mo na rin i-end streak natin kasi inuubos MO yung restore ih
+                    </p>
+
+                    <p>
+                        ayon lang. ang wish ko para sayo eh mag ipon ka na para yumaman ka na
+                        tapos bibigyan mo ako maraming pera
+                    </p>
+
+                    <p>
+                        pls wag judge, july 22 ko ginagawa to nang umaga so minadali talaga
+                    </p>
+
+                </div>
+
+                <div class="letter-signature">
+
+                    <span>
+                        galing sa nag iisang cutie,
+                    </span>
+
+                    <strong>
+                        Nayeonie
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Memory Game Win Screen -->
+
+    <div class="popup-overlay win-screen"
+         id="winScreen"
+         role="dialog"
+         aria-modal="true"
+         aria-labelledby="winTitle">
+
+        <div class="win-card">
+
+            <div class="celebration-icon">
+                🎂
+            </div>
+
+            <p class="win-small-title">
+                amazing grabe amazing
+            </p>
+
+            <h2 id="winTitle">
+                WOW ANG LOPIT
+            </h2>
+
+            <p class="win-message">
+                dahil malopit ka at natapos mo
+                edi congrats
+            </p>
+
+            <div class="final-stats">
+
+                <div>
+
+                    <span>
+                        Moves
+                    </span>
+
+                    <strong id="finalMoves">
+                        0
+                    </strong>
+
+                </div>
+
+                <div>
+
+                    <span>
+                        Time
+                    </span>
+
+                    <strong id="finalTime">
+                        00:00
+                    </strong>
+
+                </div>
+
+            </div>
+
+            <button class="primary-button"
+                    id="restartBtn"
+                    type="button">
+
+                💖 laro k pa ulit
+
+            </button>
+
+            <button class="text-button"
+                    id="closeWinBtn"
+                    type="button">
+
+                ayaw na
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- Confetti Container -->
+
+    <div class="confetti-container"
+         id="confettiContainer"
+         aria-hidden="true">
+    </div>
+
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
